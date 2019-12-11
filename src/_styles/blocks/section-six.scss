@@ -133,12 +133,16 @@
               border-radius: 50%;
               background: $c-text;
               display: block;
-              transform: translate(33%, 33%);
+              transform: translate(-50%, -50%);
+              position: absolute;
+              left: 50%;
+              top: 50%;
             }
           }
           label{
             display: flex;
             cursor: pointer;
+            position: relative;
             font-size: 16px;
             color: #edecec;
             font-family: 'PT Sans', sans-serif;

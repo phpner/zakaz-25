@@ -17,7 +17,7 @@
     "gulp-sourcemaps": "^2.6.0"
   },
   "paths": {
-    "src": {
+    "data-src": {
       "templates": "src/_templates/",
       "styles": "src/_styles/",
       "data": "src/_data/"

@@ -12,6 +12,14 @@
 
 @import "libs/*";
 
+img {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+img[data-src] {
+  opacity: 0;
+}
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
@@ -37,11 +45,6 @@
   .section__one__wrapper__item-man {
     left: 46vw;
     height: 400px;
-  }
-  .section__six__right .form-bottom form .box-checkbox input:checked + label .modef:before {
-    width: 11px;
-    height: 11px;
-    transform: translate(36%, 66%);
   }
 }
 /* Medium Devices, Desktops */
@@ -95,6 +98,9 @@
   .section__six__right{
     margin-top: 80px;
   }
+  .footer{
+    flex-wrap: wrap;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -123,15 +129,95 @@
     border-radius: 15px;
     width: auto;
   }
-
+  .section__two__wrapper{
+    flex-direction: column;
+    align-items: center;
+  }
+  .section__two-center{
+    display: none;
+  }
+  .section__two-left{
+    left: inherit;
+    img{
+      width: 250px;
+    }
+  }
+  .section__two-right{
+    right: 0;
+    img{
+      width: 250px;
+    }
+  }
+  .section__six__left #accordion{
+    width: 450px;
+  }
+  .section__one__wrapper__text {
+    color: #fff;
+    z-index: 12;
+    background: rgba(97, 97, 97, 0.66);
+    width: 100%;
+    left: 0!important;
+    right: 0!important;
+    top: 0!important;
+    bottom: 0!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+  }
+  .section__one {
+    background: #fee7d5;
+  }
+  .section__two h2 {
+    margin-top: 60px;
+  }
+  .section__three h2 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  .section__five h2{
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  .section__four h2{
+    margin-top: 60px;
+  }
+  .footer__left,.footer__center, .footer__right{
+    margin: 15px;
+  }
+  .section__six{
+    padding-bottom: 80px;
+  }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+  h2{
+    font-size: 25px;
+  }
   .section__six__left #accordion,.section__six__right .form-bottom{
+    width: 90%;
+    margin: auto;
+  }
+  .header__center{
+    padding-left: 10px;
+  }
+  .header__center h1{
+    margin-top: 130px;
+  }
+  .footer{
+    text-align: center;
+  }
+  .section__four__mob img{
+    width: 250px;
+    height: 250px;
+  }
+  .section__three__item__text{
+    text-align: center;
+  }
+  .section__six__right .form-bottom form input[type=submit]{
     width: 100%;
   }
-
 }
 
 /* Custom, iPhone Retina */
