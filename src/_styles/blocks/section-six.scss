@@ -1,0 +1,180 @@
+.section {
+  &__six {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 160px;
+    padding-bottom: 130px;
+    background: #ffe8d8;
+  }
+  &__six__left {
+    h3{
+      position: relative;
+      padding-bottom: 60px;
+      font-size: 36px;
+      color: $c-text;
+      text-align: left;
+      font-family: 'PT Sans', sans-serif;
+      font-weight: bold;
+    }
+    #accordion{
+      width: 850px;
+      h3{
+        position: relative;
+        padding-left: 70px;
+        margin: 9px 0 0 0;
+        overflow: hidden;
+        font-family: 'PT Sans', sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        color: $c-text!important;
+      }
+    }
+    .ui-state-default{
+      background: #fff!important;
+      border: none;
+    }
+    .ui-icon{
+      position: absolute;
+      bottom: -3px;
+      left: -3px;
+      height: 110%;
+      width: 60px;
+      background-size: 29px 16px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: $c-text;
+    }
+    .ui-accordion-content{
+      position: relative;
+      padding-left: 70px!important;
+      border: none;
+      background: rgba(255, 255, 255, 0.48);
+      p{
+        color: $c-text!important;
+        font-size: 20px;
+        font-family: 'PT Sans', sans-serif;
+        font-weight: 400;
+      }
+
+      .line{
+        background: #4a2116;
+        display: block;
+        width: 57px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    }
+    .ui-state-active{
+      border: none!important;
+    }
+  }
+  &__six__right {
+    h3{
+      position: relative;
+      padding-bottom: 60px;
+      font-size: 36px;
+      color: $c-text;
+      font-family: 'PT Sans', sans-serif;
+      font-weight: bold;
+      text-align: center;
+    }
+    .form-bottom{
+      width: 470px;
+      form{
+        width: 100%;
+        background: url("../img/section-six/form-bg.png")center no-repeat;
+        background-size: cover;
+        display: block;
+        padding: 28px;
+        h4{
+          font-family: 'PT Sans', sans-serif;
+          font-weight: bold;
+          font-size: 30px;
+          text-align: center;
+          color: $c-text;
+          padding-bottom: 25px;
+        }
+        .form-control{
+          position: relative;
+          display: flex;
+          ::placeholder{
+            color: #999494;
+            font-size: 18px;
+            font-family: 'PT Sans', sans-serif;
+            font-weight: 400;
+          }
+          img{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 15px;
+            left: 18px;
+          }
+          input{
+            padding-left: 55px;
+            height: 60px;
+            border: none;
+            border-radius: 8px;
+            margin-bottom: 15px;
+          }
+
+        }
+        .box-checkbox{
+          display: flex;
+          input{
+            display: none;
+            &:checked + label .modef:before{
+              content: '';
+              width: 15px;
+              height: 15px;
+              border-radius: 50%;
+              background: $c-text;
+              display: block;
+              transform: translate(33%, 33%);
+            }
+          }
+          label{
+            display: flex;
+            cursor: pointer;
+            font-size: 16px;
+            color: #edecec;
+            font-family: 'PT Sans', sans-serif;
+            font-weight: bold;
+            padding-left: 10px;
+            user-select: none;
+
+            .modef{
+              width: 25px;
+              height: 25px;
+              display: inline-block;
+              background: #edecec;
+              position: relative;
+              left: -10px;
+              transition: all .5s;
+            }
+          }
+
+        }
+        input[type=submit]{
+          background: $c-text;
+          width: 250px;
+          height: 55px;
+          margin: auto;
+          margin-top: 30px;
+          border: none;
+          font-size: 24px;
+          color: #fff;
+          text-transform: uppercase;
+          display: block;
+          cursor: pointer;
+          &:hover{
+            background: #cc8f71
+          }
+        }
+      }
+    }
+  }
+}

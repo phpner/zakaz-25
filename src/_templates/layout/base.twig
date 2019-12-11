@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru" prefix="og: http://ogp.me/ns#">
+    <head>
+        <title>ШКОЛА РАЗВИТИЯ НАВЫКОВ “ЕиЛ”</title>
+        <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+
+        {% block common_styles %}
+            <link rel="stylesheet" href="css/style.css">
+            <!-- <link rel="stylesheet" href="css/style.min.css?v=3"> -->
+        {% endblock %}
+    </head>
+    <body>
+        {% include "../includes/header.twig" %}
+
+            {% block content %}
+            {% endblock %}
+
+        {% include "../includes/footer.twig" %}
+
+
+
+        {% block common_scripts %}
+            <script src="js/libs/jquery-3.4.1.min.js"></script>
+            <script src="js/libs/jquery-ui.min.js"></script>
+            <script src="js/libs/slick.min.js"></script>
+            <script src="js/main.js?v=2"></script>
+        {% endblock %}
+    </body>
+</html>

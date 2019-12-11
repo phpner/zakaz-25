@@ -1,0 +1,36 @@
+.section {
+
+  &__two {
+    background: url("../img/section-two/bg.jpg")0 0 no-repeat;
+    background-size: cover;
+    h2{
+      margin-top: 160px;
+    }
+  }
+  &__two__wrapper {
+    display: flex;
+  }
+  &__two-left {
+    position: relative;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__two-right {
+    position: relative;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__two-center {
+    margin-top: 375px;
+  }
+  &__two__text {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: $c-text;
+  }
+}

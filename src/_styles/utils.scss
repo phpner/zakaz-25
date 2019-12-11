@@ -1,0 +1,8 @@
+.pos-r {
+    position: relative;
+}
+
+
+.clearfix{
+    @include clearfix()
+}

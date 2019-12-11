@@ -1,0 +1,40 @@
+.section {
+  &__three {
+    background: url("../img/section-three/bg.jpg")0 0 no-repeat;
+    background-size: cover;
+    h2{
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+  &__three__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__three__item {
+    border: 2px solid rgba(74, 33, 22, 0.35);
+    border-radius: 8px;
+    padding: 5px;
+    margin: 10px 15px;
+  }
+  &__three__item__in {
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(74, 33, 22, 0.35);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__three__item__text {
+    border: 2px solid rgba(74, 33, 22, 0.35);
+    border-radius: 8px;
+    padding: 8px;
+    margin: 8px 0;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    color: $c-text;
+    font-size: 22px;
+  }
+}
